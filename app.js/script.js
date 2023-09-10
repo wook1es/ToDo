@@ -93,6 +93,9 @@ function update() {
 	if (list.children.length > 0) {
 		emptyList.classList.add('none')
 	}
+	if (array.length === 0) {
+	emptyList.classList.remove('none')
+	}
 }
 update()
 
