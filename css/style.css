@@ -1,10 +1,18 @@
 @import url(./null.css);
 
+
+:root {
+	--color-black: rgb(31, 31, 31);
+	--color-light-black: rgb(48, 48, 48);
+	--color-blue: rgb(0, 172, 255);
+}
+
 body {
 	font-family: 'Montserrat', sans-serif;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: var(--color-black)
 }
 
 
@@ -12,10 +20,10 @@ body {
 	margin-top: 50px;
 	width: 60%;
 	height: auto;
-	background-color: rgb(236, 236, 236);
 	border-radius: 20px;
 	padding: 20px;
-	box-shadow: 0px 0px 20px 0px #9c9c9c;
+	/* box-shadow: 0px 0px 20px 0px #9c9c9c; */
+	background-color: var(--color-light-black)
 }
 
 .to-do__container {
@@ -29,11 +37,11 @@ body {
 .list-header {
 	font-size: 60px;
 	font-weight: 700;
-	color: rgb(0, 162, 255);
+	color: var(--color-blue);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: white;
+	background-color: var(--color-black);
 	padding: 10px;
 	border-radius: 10px;
 	margin-bottom: 10px;
@@ -56,6 +64,7 @@ body {
 	align-items: center;
 	flex-direction: column;
 	font-size: 30px;
+	color: white;
 }
 
 
@@ -68,24 +77,26 @@ body {
 
 
 .add-new-task {
-	background-color: white;
+	background-color: var(--color-black);
+	color: white;
 	border-radius: 10px;
 	padding: 10px;
 	margin-bottom: 10px;
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 30px;
 	display: flex;
 	align-items: center;
 }
 
 .input-task {
-	background-color: white;
+	background-color: var(--color-black);
 	border-radius: 10px;
 	padding: 10px;
 	margin-bottom: 10px;
 	font-size: 20px;
 	display: flex;
 	align-items: center;
+	color: white;
 }
 
 .btn-add-task {
@@ -110,16 +121,17 @@ body {
 }
 
 .task_container {
-	background-color: white;
+	background-color: var(--color-black);
 	border-radius: 10px;
 	padding: 10px;
 	margin-bottom: 10px;
 	display: flex;
 	flex-wrap: wrap;
+	color: white;
 }
 
 .background {
-	background-color: rgba(0, 112, 0, 0.137);
+	background-color: rgba(0, 224, 0, 0.137);
 }
 
 .task_content {
@@ -132,10 +144,11 @@ body {
 }
 
 .counter-tasks {
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 30px;
 	margin-bottom: 10px;
 	margin-top: 30px;
+	color: white;
 }
 
 .icons {
