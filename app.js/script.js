@@ -47,7 +47,6 @@ function deleteTask(e) {
 			emptyList.classList.remove('none')
 		}
 		update()
-		input.focus()
 	}
 
 
